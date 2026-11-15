@@ -30,6 +30,15 @@ bash scripts/bundle.sh
 open build/PomodoroStar.app
 ```
 
+## 打包成 .dmg
+
+```bash
+bash scripts/bundle.sh          # 先构建 .app
+bash scripts/make-dmg.sh 1.0.0  # 再生成 DMG（内含「拖到应用程序」快捷方式）
+```
+
+生成的 DMG 位于 `build/PomodoroStar-v1.0.0-macOS-arm64.dmg`。
+
 ## 重新生成图标
 
 ```bash
